@@ -5,7 +5,7 @@ event = threading.Event()
 def myfunction():
     print("Waiting for event to trigger...\n")
     event.wait()
-    print("peforming....")
+    print("Peforming....")
 
 t1 = threading.Thread(target=myfunction)
 t1.start()
